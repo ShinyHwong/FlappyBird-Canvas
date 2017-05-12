@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlappyBird</title>
+    <style>
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+            margin:0;
+            padding:0;
+        }
+        body{
+            overflow: hidden;
+        }
+        #canvas{
+            margin: 0;
+            padding: 0;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<script src="js/simple-inheritence.js"></script>
+<script src="js/Game.js"></script>
+<!--<script src="js/GameStart.js"></script>-->
+<script src="js/FrameUtility.js"></script>
+<script src="js/LocalImagesData.js"></script>
+<script src="js/BackGround.js"></script>
+<script src="js/Pipe.js"></script>
+<script src="js/Bird.js"></script>
+<script>
+var game = new Game({
+    canvas : 'canvas',
+    fps : 60
+});
+game.cvs.width = window.innerWidth;
+game.cvs.height = window.innerHeight;
+</script>
+</body>
+</html>
