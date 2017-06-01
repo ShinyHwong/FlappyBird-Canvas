@@ -23,7 +23,7 @@
                 //获取死亡图片每张的尺寸
                 var diePicWidth = 1625/5;
                 var diePicHeight = 828/6;
-                var picCols = this.dieIndex%5; //求出图片列数
+                var picCols = this.dieIndex % 5; //求出图片列数
                 var picRows = parseInt(this.dieIndex/5); //求出图片行数
                 //绘制死亡的图片
                 game.ctx.drawImage(game.imageData.blood,picCols*diePicWidth,picRows*diePicHeight,diePicWidth,diePicHeight,this.x-diePicWidth/2,this.y,diePicWidth,diePicHeight);
